@@ -1,17 +1,25 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-        System.out.println("Hola mundo");
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        int numero1 = 1;
+        int numero2 = 2;
+        int numero3 = 3;
+        suma(numero1,numero2,numero3);
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Coche miCoche = new Coche();
+        miCoche.IncrementarPuertas();
+        System.out.println("Numero de puertas: " + miCoche.numpuertas);
+    }
+    public static void suma(int a, int b, int c){
+        int suma = a+b+c;
+        System.out.println("Suma: "+ suma);
+    }
+}
+
+class Coche {
+    public int numpuertas= 2;
+
+    public void IncrementarPuertas(){
+        this.numpuertas++;
     }
 }
